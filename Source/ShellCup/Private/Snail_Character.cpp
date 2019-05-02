@@ -24,8 +24,8 @@ void ASnail_Character::MoveForward(float Value)
 }
 void ASnail_Character::TorqueRight(float Value)
 {
+	AddControllerYawInput(Value);
 
-	AddMovementInput(GetActorRightVector() * Value);
 }
 
 // Called every frame
